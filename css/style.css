@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "Circe", light;
+	font-family: "Circe";
 	font-size: 17px;
 	letter-spacing: 0.1px;
 }
@@ -11,7 +11,7 @@ body{
 	height: auto;
 	margin: 0 auto;
 	padding: 0;
-	background-color: white;
+	background-color: lightgray;
 }
 
 .header {
@@ -19,18 +19,74 @@ body{
 	background-color: gray;
 }
 
+.header a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .header-top {
 	height: 115px;
-	background-color: green;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.navigation ul {
+.navigation,
+.contacts {
+	width: 437px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.navigation {
+	margin-left: 42px;
+}
+
+.social {
+	display: flex;
+	height: 26px;
+	width: 110px;
+	justify-content: space-between;
+}
+
+.navigation li {
 	list-style: none;
+	font-size: 12px;
 }
 
-.bold {
-	font-family: "Circe-Bold";
+.header-main {
+	background:  lightblue url("../img/sea.png") no-repeat;
+	background-size: cover;
+	height: 550px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
