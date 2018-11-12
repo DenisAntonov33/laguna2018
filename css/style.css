@@ -59,6 +59,67 @@ body{
 	background:  lightblue url("../img/sea.png") no-repeat;
 	background-size: cover;
 	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-main .hat{
+	font-family: "Circe-Bold";
+	font-size: 29px;
+	line-height: 1.07;
+	color: white;
+	width: 458px;
+	background-color: green;
+	text-align: center;
+	margin-top: 160px;
+}
+
+.booking-options {
+	width: 744px;
+	height: 54px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.booking-options form {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border-radius: 100px;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+}
+
+.field {
+	border-right: 3px solid grey;
+	width: 30%;
+}
+
+.btn {
+	width: 270px;
+	height: 40px;
+	border-radius: 100px;
+	background-image: linear-gradient(118deg, #96d9ff, #3898f0);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.field:last-child {
+	border-right: none;
+}
+
+.btn:hover {
+	background-image: linear-gradient(298deg, #96d9ff, #3898f0);
+}
+
+.btn:active {
+	background-color: #96d9ff;
+	opacity: 0.7; 
 }
 
 
