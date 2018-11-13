@@ -47,6 +47,11 @@ body{
 	height: 26px;
 	width: 110px;
 	justify-content: space-between;
+	margin-left: 100px;
+}
+
+.phone {
+	margin-right: 20px;
 }
 
 .navigation li {
@@ -94,10 +99,28 @@ body{
 .field {
 	border-right: 3px solid grey;
 	width: 30%;
-
+	position: relative;
 }
 
-.btn {
+.field::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 14px;
+	top: 20px;
+	right: 10px;
+	background-image: url("../img/calendar.png");
+	pointer-events: none;
+}
+
+.last::after {
+	background-image: url("../img/arrow.png");
+	background-size: 14px 14px;
+}
+
+
+.header-main button {
 	width: 270px;
 	height: 40px;
 	border-radius: 100px;
@@ -106,19 +129,20 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: none;
 }
 
 .field:last-child {
 	border-right: none;
 }
 
-.btn:hover {
+.header-main button:hover {
 	background-image: linear-gradient(298deg, #96d9ff, #3898f0);
 }
 
-.btn:active {
+.header-main button:active {
 	background-color: #96d9ff;
-	opacity: 0.7; 
+	opacity: 0.7;
 }
 
 .main {
