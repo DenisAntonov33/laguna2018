@@ -91,18 +91,25 @@ body{
 	padding: 0;
 	height: 100%;
 	border-radius: 100px;
-	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	background-color: white;
-}
-
-.field {
-	border-right: 3px solid grey;
-	width: 30%;
 	position: relative;
 }
 
-.field::after {
+.field input,
+.field select {
+	border: 0;
+	width: 230px;
+	height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.field input {
+	border-right: 3px solid grey;
+}
+
+input::after {
 	position: absolute;
 	content: "";
 	display: inline-block;
@@ -111,12 +118,17 @@ body{
 	top: 20px;
 	right: 10px;
 	background-image: url("../img/calendar.png");
-	pointer-events: none;
 }
 
 .last::after {
-	background-image: url("../img/arrow.png");
-	background-size: 14px 14px;
+	position: absolute;
+	content: "";
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	top: 20px;
+	right: 15px;
+	background: url("../img/arrow.png") no-repeat;
 }
 
 
