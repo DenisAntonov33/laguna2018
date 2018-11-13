@@ -137,6 +137,43 @@ body{
 	margin: 40px auto;
 }
 
+.left-side {
+	width: 45%;
+	float: left;
+	margin-left: 35px;
+}
+
+.icons-service {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.right-side {
+	width: 45%;
+	float: right;
+	margin-right: 35px;
+}
+
+.right-side a {
+	font-family: "Circe";
+	font-size: 13px;
+	color: black;
+	text-decoration: none;
+}
+
+.mini-photo button {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	height: 65px;
+}
+
+.full-photo {
+	margin-top: 80px;
+}
+
+
+
 
 
 
