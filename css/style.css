@@ -142,29 +142,38 @@ body{
 .main-inner {
 	width: 1200px;
 	background-color: white;
+	margin-bottom: 60px;
+}
+
+.main-inner-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
 .left-side {
 	width: 45%;
-	float: left;
 	margin-left: 35px;
 }
 
-.icons-service {
+.left-side h3 {
+	font-size: 17px;
+}
+
+.icons {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .right-side {
 	width: 45%;
-	float: right;
 	margin-right: 35px;
 }
 
 .right-side a {
 	font-family: "Circe";
 	font-size: 13px;
-	color: black;
+	color: #0541a5;
 	text-decoration: none;
 }
 
@@ -175,13 +184,42 @@ body{
 	height: 65px;
 }
 
-.full-photo {
-	margin-top: 0px;
+.rate {
+	padding-top: 50px;
 }
 
+.full-photo {
+	margin-top: 70px;
+}
 
+.right-side .table {
+	background-color: #f0f0f0;
+	font-size: 14px;
+	width: 520px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+}
 
+.table-container {
+	padding-top: 50px;
+}
 
+.table tr:nth-child(2n) {
+	background-color: #fff;
+}
+
+.table tr td {
+	padding: 10px;
+	border: none;
+	border-collapse: collapse;
+}
+
+.location {
+	padding-top: 50px;
+}
 
 
 
