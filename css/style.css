@@ -40,6 +40,7 @@ body{
 
 .navigation {
 	margin-left: 42px;
+	text-transform: uppercase;
 }
 
 .social {
