@@ -94,15 +94,17 @@ body{
 	justify-content: center;
 	background-color: white;
 	position: relative;
+	overflow: hidden;
 }
 
 .field input,
 .field select {
 	border: 0;
-	width: 230px;
+	width: 250px;
 	height: 100%;
 	box-sizing: border-box;
 	position: relative;
+	padding-left: 30px;
 }
 
 .field input {
