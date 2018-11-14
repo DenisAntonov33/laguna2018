@@ -160,7 +160,11 @@ input::after {
 }
 
 
+
+
 /*стили мэйн*/
+
+
 
 
 .main {
@@ -168,6 +172,7 @@ input::after {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: "Circe-Light";
 }
 
 .main h2 {
@@ -202,7 +207,7 @@ input::after {
 	margin-left: 35px;
 }
 
-.left-side h3 {
+.main-inner-block h3 {
 	font-size: 17px;
 }
 
@@ -216,7 +221,7 @@ input::after {
 	margin-right: 35px;
 }
 
-.right-side a {
+.main-inner-block a {
 	font-family: "Circe";
 	font-size: 13px;
 	color: #0541a5;
@@ -289,6 +294,7 @@ input::after {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
 .main-inner-hat:after {
@@ -317,6 +323,17 @@ input::after {
 	color: #0541a5;
 }
 
+.room-price {
+	margin-top: 20px;
+	font-family: "Circe";
+}
+
+.price-value {
+	display: inline-block;
+	font-family: "Circe-Bold";
+	font-size: 29px;
+	margin: 0 5px 0 5px;
+}
 
 
 
