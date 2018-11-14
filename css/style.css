@@ -215,6 +215,10 @@ input::after {
 	text-decoration: none;
 }
 
+.right-side a:hover {
+	text-decoration: underline;
+}
+
 .mini-photo button {
 	margin: 0;
 	padding: 0;
@@ -251,8 +255,16 @@ input::after {
 
 .table tr td {
 	padding: 10px;
-	border: none;
-	border-collapse: collapse;
+	border-width: 0;
+	font-family: "Circe-Bold";
+}
+
+.table tr:first-child td{
+	font-family: "Circe";
+}
+
+.table tr td:first-child{
+	font-family: "Circe";
 }
 
 .location {
