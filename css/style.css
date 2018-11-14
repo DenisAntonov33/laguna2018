@@ -185,6 +185,23 @@ input::after {
 	margin-bottom: 40px;
 	width: 260px;
 	text-align: center;
+	position: relative;
+}
+
+.main a {
+	color: black;
+}
+
+.before::before {
+	position: absolute;
+	content: "";
+	width: 14px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-image: url("../img/arrow.png");
+	top: 7px;
+	left: 20px;
+	transform: rotate(90deg);
 }
 
 .main-inner {
@@ -285,7 +302,10 @@ input::after {
 }
 
 
+
 /* стили second-page */
+
+
 
 .main-inner-hat {
 	width: 540px;
@@ -320,7 +340,11 @@ input::after {
 
 .main-inner-hat-text a {
 	text-decoration: none;
-	color: #0541a5;
+	color: #2675b2;
+}
+
+.main-inner-hat-text a:hover {
+	text-decoration: underline;
 }
 
 .room-price {
@@ -333,6 +357,10 @@ input::after {
 	font-family: "Circe-Bold";
 	font-size: 29px;
 	margin: 0 5px 0 5px;
+}
+
+.space-bottom {
+	margin-bottom: 50px;
 }
 
 
