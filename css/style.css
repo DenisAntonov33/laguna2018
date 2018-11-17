@@ -98,17 +98,17 @@ body{
 	overflow: hidden;
 }
 
-.field input,
-.field select {
+input,
+select {
 	border: 0;
 	width: 250px;
-	height: 100%;
+	height: 55px;
 	box-sizing: border-box;
 	position: relative;
 	padding-left: 30px;
 }
 
-.field input {
+input {
 	border-right: 3px solid grey;
 }
 
@@ -139,7 +139,8 @@ input::after {
 }
 
 .header-main button,
-.padding-bottom button {
+.padding-bottom button,
+.modal-window button{
 	width: 270px;
 	height: 40px;
 	border-radius: 100px;
@@ -154,7 +155,8 @@ input::after {
 }
 
 .header-main button:hover,
-.padding-bottom button:hover {
+.padding-bottom button:hover,
+.modal-window-main-btn:hover {
 	background-image: linear-gradient(298deg, #96d9ff, #3898f0);
 }
 
@@ -306,8 +308,126 @@ button:active {
 }
 
 
+/*===================*/
+/* стили modal-window */
+/*===================*/
 
+.modal-window {
+	display: none;
+	position: absolute;
+	width: 35%;
+	height: 770px;
+	top: 160px;
+	left: 33%;
+	right: 32%;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.modal-window-container {
+	width: 90%;
+	height: 90%;
+	margin: 30px auto 0;
+	padding-top: 50px;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+}
+
+.modal-window-container .close {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/close-icon.svg);
+	top: 0;
+	right: 0;
+	background-repeat: no-repeat;
+}
+
+.modal-window-container::before {
+	position: absolute;
+}
+
+.modal-window-container form {
+	width: 75%;
+	height: 90%;
+	margin: 40px auto 0px;
+}
+
+.modal-window-container input,
+.modal-window-container select {
+	border-radius: 100px;
+	border: none;
+	background-color: #f2f2f2;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.left-input {
+	margin-right: 35px;
+}
+
+.modal-window-container .left-input,
+.modal-window-container .right-input {
+	width: 45%;
+}
+
+.value-guests {
+	width: 200px;
+	height: 80px;
+	margin: 20px auto;
+}
+
+.value-guests-inner button {
+	display: inline-block;
+	width: 10px;
+	height: 20px;
+	background-image: url(../img/plus-icon.svg);
+	background-repeat: no-repeat;
+	border-radius: 0;
+	background-position: 50%;
+	background-color: #fff;
+}
+
+.value-guests-inner .btn-minus {
+	background-image: url(../img/minus-icon.svg);
+}
+
+.value-guests-inner span {
+	font-size: 29px;
+	font-family: 'Circe-Bold';
+	margin: 15px;
+}
+
+.modal-window-main-btn {
+	margin: 40px auto 20px;
+}
+
+.value-guests-outer {
+	color: #d12f2f;
+}
+
+.modal-window-container .last {
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===================*/
 /* стили second-page */
+/*===================*/
 
 
 
@@ -330,7 +450,7 @@ button:active {
 	margin-top: 30px;
 }
 
-.main-inner-hat h1 {
+h1 {
 	margin: 0;
 	padding: 0;
 	font-family: "Circe-Bold";

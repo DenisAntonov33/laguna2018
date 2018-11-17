@@ -7,6 +7,37 @@
 </head>
 <body>
 <div class="container">
+
+<div class="modal-window">
+	<div class="modal-window-container">
+		<a href=""><div class="close"></div></a>
+		<h1>Оставить заявку на бронь</h1>
+		<form>
+			<input class="left-input" type="date" name="intro" placeholder="Заезд">
+			<input class="right-input" type="date" name="outro" placeholder="Выезд">
+			<div class="last"><select class="last" id="number" name="number" placeholder="djjs">
+				<option>Номер</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select></div>
+			<input type="text" name="name" placeholder="Введите ваше имя и фамилию">
+			<input type="tel" name="tel" pattern="+[0-9]{11}" placeholder="Введите ваш номер телефона">
+			<input type="text" name="email" placeholder="Введите ваш e-mail">
+			<div class="value-guests">
+				<span>Количество отдыхающих:</span>
+				<div class="value-guests-inner">
+					<button class="btn-minus"></button>
+					<span>2</span>
+					<button class="btn-plus"></button>
+				</div>
+			</div>
+			<button class="modal-window-main-btn" type="submit">Забронировать</button>
+			<span class="value-guests-outer">Ты даун, нельзя вводить буквы!</span>
+		</form>
+	</div>
+</div>
+
 	<div class="header">
 		<div class="header-top">
 			<div class="navigation">
