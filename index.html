@@ -8,9 +8,10 @@
 <body>
 <div class="container">
 
+<div class="modal-overlay"></div>
 <div class="modal-window">
 	<div class="modal-window-container">
-		<a href=""><div class="close"></div></a>
+		<a href="" id="close"><div class="close"></div></a>
 		<h1>Оставить заявку на бронь</h1>
 		<form>
 			<input class="left-input" type="date" name="intro" placeholder="Заезд">
@@ -36,6 +37,7 @@
 			<span class="value-guests-outer">Ты даун, нельзя вводить буквы!</span>
 		</form>
 	</div>
+</div>
 </div>
 
 	<div class="header">
@@ -79,7 +81,7 @@
 					</select></div>
 				</form>
 			</div>
-			<button type="submit"><span>Забронировать</span></button>
+			<button type="submit" id="to-book"><span>Забронировать</span></button>
 		</div>
 	</div>
 
@@ -206,5 +208,6 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
